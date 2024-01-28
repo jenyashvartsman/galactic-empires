@@ -32,7 +32,7 @@
 
 .branch-gallery-card-title {
   text-align: center;
-  color: var(--color-bg);
+  color: var(--color-bg-1);
   flex: 1;
   display: flex;
   align-items: center;
