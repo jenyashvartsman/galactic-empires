@@ -1,6 +1,7 @@
 :root {
-  --color-bg: #050505;
-  --color-text: #d4d4d4;
+  --color-bg-1: #0d0c0c;
+  --color-bg-2: #383838;
+  --color-text: #d1cbcb;
 }
 
 * {
@@ -15,5 +16,6 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: var(--color-text);
+  background-color: var(--color-bg-1);
   min-height: 100vh;
 }

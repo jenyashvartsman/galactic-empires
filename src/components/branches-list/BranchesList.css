@@ -1,0 +1,61 @@
+.branches-list {
+  flex: 1;
+  width: 100%;
+  list-style-type: none;
+}
+
+.branches-list-item {
+  position: relative;
+}
+
+.branches-list-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.branches-list-item-i {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  background-color: var(--color-text);
+  color: var(--color-bg-2);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-12px);
+}
+
+.branches-list-item-i.active {
+  display: flex;
+}
+
+.branches-list-item-btn {
+  background-color: var(--color-bg-2);
+  color: var(--color-text);
+  border: none;
+  border-radius: 2px;
+  width: 100%;
+  text-align: left;
+  padding: 15px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.branches-list-item-btn:hover {
+  background-color: var(--color-text);
+  color: var(--color-bg-2);
+}
+
+.branches-list-item.active .branches-list-item-i {
+  display: flex;
+}
+
+.branches-list-item.active .branches-list-item-btn {
+  background-color: var(--color-text);
+  color: var(--color-bg-2);
+}

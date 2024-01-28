@@ -1,10 +1,11 @@
 import { EmpireDto } from "../dtos/empire.dto";
 
-export const empiresData: EmpireDto[] = [
+const empiresData: EmpireDto[] = [
   {
     id: "imperium-of-man",
     name: "Imperium of Man",
     planetsUnderControl: 1_000_000,
+    logoUrl: "/imperium-of-man/logo.jpg",
     branches: [
       {
         id: "space-marines",
@@ -45,7 +46,7 @@ export const empiresData: EmpireDto[] = [
             url: "/imperium-of-man/imperial-guard/2.jpg",
           },
           {
-            title: "Ordinary man and women",
+            title: "Ordinary men and women",
             url: "/imperium-of-man/imperial-guard/3.jpg",
           },
         ],
@@ -92,7 +93,7 @@ export const empiresData: EmpireDto[] = [
         name: "Adeptus Custodes",
         images: [
           {
-            title: "Emprors chosen",
+            title: "Emperors chosen",
             url: "/imperium-of-man/adeptus-custodes/1.png",
           },
           {
@@ -135,7 +136,7 @@ export const empiresData: EmpireDto[] = [
           },
         ],
         details: {
-          thumbnailUrl: "/imperium-of-man/sisters-of-battle/thumbnail.jpg",
+          thumbnailUrl: "/imperium-of-man/sisters-of-battle/thumbnail.png",
           type: "Infantry/Missionary",
           quote:
             "Heretics crave the cleansing fire of absolution. They need not fear, for we shall deliver it to them.",
@@ -150,6 +151,7 @@ export const empiresData: EmpireDto[] = [
     id: "galactic-empire",
     name: "Galactic Empire",
     planetsUnderControl: 1_500_000,
+    logoUrl: "galactic-empire/logo.svg",
     branches: [
       {
         id: "stormtrooper-corps",
@@ -193,7 +195,7 @@ export const empiresData: EmpireDto[] = [
           },
           {
             title: "Coruscant",
-            url: "/galactic-empire/imperial-navy/2.jpg",
+            url: "/galactic-empire/imperial-navy/3.jpg",
           },
         ],
         details: {
@@ -237,3 +239,6 @@ export const empiresData: EmpireDto[] = [
     ],
   },
 ];
+
+export const getEmpiresData = (): EmpireDto[] =>
+  JSON.parse(JSON.stringify(empiresData));
